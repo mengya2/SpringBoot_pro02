@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace 是命名空间  这个值需要和，1、类一致，2、方法一致，然后在其中写sql语句处理-->
+<mapper namespace="com.zww.dao.StudentMapper">
+
+<!--    定义sql的语句处理-->
+    <select id="selectStudentById" resultType="com.zww.pojo.Student">
+        select id,name,age from student where id=#{id}
+    </select>
+</mapper>
