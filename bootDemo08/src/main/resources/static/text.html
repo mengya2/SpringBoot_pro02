@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试Rest</title>
+</head>
+<body>
+<h3>测试Rest请求的一些方式</h3>
+<form method="post" action="student/text1">
+<!--    这里才是真正要用到的一些方式-->
+    <input type="hidden" name="_method" value="put">
+    <input type="submit" value="测试提交处理">
+</form>
+
+<form method="post" action="student/del" >
+    <!--    这里才是真正要用到的一些方式-->
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="测试delete">
+</form>
+</body>
+</html>
